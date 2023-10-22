@@ -1,0 +1,157 @@
+/** body styles*/
+body {
+  background-color: #ffe6c7;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+/* app styling starts*/
+.calculator {
+  background-color: #454545;
+  padding: 50px;
+  width: 500px;
+  border-radius: 38px;
+  box-shadow: 0 0 25px 7px #ff6000;
+}
+/*screen styling*/
+.display {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+  background-color: #454545;
+  padding: 12px;
+  font-size: 2.5rem;
+  border-radius: 25px;
+}
+/**!input*/
+.input {
+  color: #ffe6c7;
+  font-size: 2em;
+}
+
+/*Buttons*/
+.button {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.btn {
+  border: none;
+  border-radius: 13px;
+  padding: 25px 0;
+  font-size: 2.5rem;
+  background-color: #454545;
+  color: #ffe6c7;
+  box-shadow: 0 0 10px 2px #ff6000;
+}
+.btn:hover {
+  background-color: #555555;
+}
+
+.op {
+  color: #ff6000;
+}
+#zero {
+  grid-column: span 2;
+}
+#equals {
+  grid-column: span 2;
+  color: #ff6000;
+}
+/**!Responsiveness*/
+/* Media query for screens smaller than 700px */
+@media only screen and (max-width: 700px) {
+  .calculator {
+    padding: 30px;
+    width: 300px;
+  }
+
+  .display {
+    height: 60px;
+    margin-bottom: 30px;
+    font-size: 2em;
+  }
+
+  .buttons {
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 15px 0;
+    font-size: 1.6em;
+  }
+}
+
+/* Media query for screens smaller than 300px */
+@media only screen and (max-width: 400px) {
+  .calculator {
+    padding: 20px;
+    width: 220px;
+  }
+
+  .display {
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 10px 0;
+    font-size: 1.2em;
+  }
+}
+
+/* Media query for screens smaller than 200px */
+@media only screen and (max-width: 300px) {
+  .calculator {
+    padding: 10px;
+    width: 180px;
+  }
+
+  .display {
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  .buttons {
+    gap: 5px;
+  }
+
+  .btn {
+    padding: 5px 0;
+    font-size: 1em;
+  }
+}
+
+/* Media query for screens smaller than 100px */
+@media only screen and (max-width: 200px) {
+  .calculator {
+    padding: 5px;
+    width: 80px;
+  }
+
+  .display {
+    height: 20px;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+  }
+
+  .buttons {
+    gap: 2px;
+  }
+
+  .btn {
+    padding: 2px 0;
+    font-size: 0.7em;
+  }
+}
