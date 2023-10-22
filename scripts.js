@@ -19,7 +19,12 @@ buttons.map((button) => {
       }
     } else if (buttonText === "=") {
       data.push(input.innerText);
-      let result = eval(data.join(" "));
+      let result;
+      if (operator === "/" && data[1] === "0") {
+        result = "Cannot divide by zero";
+      } else {
+        result = eval(data.join(" "));
+      }
       input.innerText = result;
       data = [];
       operator = "";

@@ -1,19 +1,19 @@
 /** body styles*/
 body {
-  background-color: #ffe6c7;
+  background-color: #a2bbcf;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 /* app styling starts*/
 .calculator {
-  background-color: #454545;
+  background-color: #1d3849;
   padding: 50px;
   width: 500px;
   border-radius: 38px;
-  box-shadow: 0 0 25px 7px #ff6000;
+  box-shadow: 0 0 25px 7px #142f44;
 }
 /*screen styling*/
 .display {
@@ -47,7 +47,7 @@ body {
   font-size: 2.5rem;
   background-color: #454545;
   color: #ffe6c7;
-  box-shadow: 0 0 10px 2px #ff6000;
+  box-shadow: 0 0 10px 2px #a2bbcf;
 }
 .btn:hover {
   background-color: #555555;
